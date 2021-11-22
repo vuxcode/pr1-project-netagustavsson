@@ -1,4 +1,4 @@
-section {
+main {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@ section {
   background-color: pink;
 }
 
-section h1 {
+main h1 {
   text-transform: capitalize;
   padding-bottom: 30px;
   font-size: 2rem;
