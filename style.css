@@ -5,5 +5,30 @@ main {
   justify-content: center;
   align-content: center;
   background-color: pink;
-
 }
+
+main h1 {
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+@keyframes zooms {
+  from{ transform: translateX(-20px);}
+  to{ transform: translateX(20px);}
+}
+
+.insertBox {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+#v1, #v2 {
+  text-align:center;
+  padding: 5px 10pc;
+  width: 35px;
+  font-size: 30px;
+}
+
