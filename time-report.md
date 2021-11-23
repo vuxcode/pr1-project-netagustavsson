@@ -8,3 +8,4 @@ For example:
   - *List the things you have done.*
   23/11 9:30-9:50
   23/11 10:10-10:30
+  23/11 10:30 - 10:55
