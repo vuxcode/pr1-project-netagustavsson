@@ -1,63 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="style.css">	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<main>
-  <h1> Lets Play!</h1>
-  <div class="centerdiv">
-  	<div class="inserBox">
-  	  <div class="box1">
-  	  	<input type="text" id="v1">
-  	  </div>
-  	  <div class="box1">
-  	  	<p>X</p>
-  	  </div>
-  	  <div class="box1">
-  	  	<input type="text" id="v2">
-  	  </div>
-  	</div>
-  	<div class="middleBox">
-  	  <input type="text" id="answ">
-  	</div>
-  	<div class="sentBox">
-  	  <button onclick="jsGame()">Check Answer</button>
-  	</div>
-  </div>
-</main>
-
-<script>
- let n1 = Math.floor(Math.random()*20+1);
- let n2 = Math.floor(Math.random()*20+1);
-
- document.getElementById('v1').value = n1;
- document.getElementById('v2').value = n2;
-
- let ans = n1 * n2;
-
-const jsGame = () => {
- var user = document.getElementById('answ').value;
-
-  if(user == ans) {
-  	alert('Well done! Your Answer is correct!')
-  }
-
-  else {
-    alert("Correct Answer is " + ans +". Try Again. ");
-  }
-
-  document.getElementById('answ').value = "";
-  n1 = Math.floor(Math.random()*20+1);
-  n2 = Math.floor(Math.random()*20+1)
-
-  document.getElementById('v1').value = n1;
-  document.getElementById('v2').value = n2;
-  
-  ans = n1 * n2;
-}
-</script>	
-
-</body>
 </html>
