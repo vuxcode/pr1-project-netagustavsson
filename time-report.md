@@ -9,3 +9,4 @@ For example:
   /"23/11 9:30-9:50" starterd over from the beggining was working on index/style
   /"23/11" 10:10-10:30 continued with index ande style
   /"23/11" 10:30 - 10:55 continued with the style code
+  /"23/11"1 14:45 - 15:30 continued with the style code and index code
