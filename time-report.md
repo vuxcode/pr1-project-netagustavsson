@@ -11,3 +11,4 @@ For example:
 - 23/11" 10:30 - 10:55 "continued with the style code"
 - 23/11 14:45 - 15:30 "continued with the style code and index code"
 - 25/11 11:40 - 12:10 " continued with the index code"
+- 25/11 14:30 - 15:30 " continued with the index code" 
