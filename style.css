@@ -51,5 +51,6 @@ main h1 {
   font-size: 0,8rem;
   text-transform: uppercase;
   color: pink;
+  border: rosybrown;
 }
 
