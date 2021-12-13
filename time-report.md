@@ -14,3 +14,4 @@ For example:
 - 25/11 14:30 - 15:30 " continued with the index code" 
 - 28/11 12:00- 12:50  " continued with index code and style code"
 - 29/11 10-15 - 11-10 " continued with index code, did some changes that was wrong"
+- 13/12 18:00 - 18:10 " Added comments and changed the code"
