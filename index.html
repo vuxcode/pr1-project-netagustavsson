@@ -33,29 +33,34 @@
 	var n1 = Math.floor(Math.random()*20+1);
 	var n2 = Math.floor(Math.random()*20+1);
 
-
+    // Ansluter funktionen till box1 i body 
 	document.getElementById('v1').value = n1;
 	document.getElementById('v2').value = n2;
 
-	let ans =  n1 * n2;
-
+    // svar = random nummer1 * random nummer2 
+	var ans =  n1 * n2;
+    
+	// När du har tryckt på svars knpappen kan du inte göra ett nytt val på, Const betyder att man låser 
 	const jsGame = () => {
 		var usera = document.getElementById('answ').value;
+		
+		// if = om svaret är rätt/sant 
 		if(usera == ans){
 			alert('GREAT Worked!')
 		}
-
-    else {
-		alert("Correct Answer is " + ans + ". Try Again. ");
+    
+		// else om svaret är fel/falskt 
+        else {
+		  alert("Correct Answer is " + ans + ". Try Again. ");
 		}
 
-		document.getElementById('answ').value = "";
+	    // startar om funktionen 
 		n1 = Math.floor(Math.random()*20+1);
 		n2 = Math.floor(Math.random()*20+1);
 		document.getElementById('v1').value = n1;
 		document.getElementById('v2').value = n2; 
 
-		ans = n1 * n2;	
+		var = n1 * n2;	
 		}
 </script>	
 </body>
