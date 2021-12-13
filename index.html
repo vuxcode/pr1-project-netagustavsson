@@ -1,1 +1,67 @@
-<!-- Start writing your project code in this file! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<main>
+	<h1>LETS PLAY</h1>
+	<div class="centerdiv">
+		<div class="inserBox">
+			<div class="box1">
+			  <input type="text" id="v1">
+		 </div> 
+		 <div class="box1">
+			 <p>X</p>
+		 </div>
+		 <div class="box1">
+		  <input type="text" id="v2">	 
+		 </div>
+		</div>
+	   <div class="middleBox">
+		 <input type="text" id="answ">
+	   </div>
+	   <div class="sentBox">
+		   <button onclick="jsGame()">Check Answer</button>
+	    </div>
+	   </div>
+	</main>
+	<script>
+
+   // Ger användaren en funktion, funktionen är att det kommer att ge ett random nummer 
+	var n1 = Math.floor(Math.random()*20+1);
+	var n2 = Math.floor(Math.random()*20+1);
+
+    // Ansluter funktionen till box1 i body 
+	document.getElementById('v1').value = n1;
+	document.getElementById('v2').value = n2;
+
+    // svar = nummer 1 * nummer 2
+	var ans =  n1 * n2;
+	
+	// När du har tryckt på svars knpappen kan du inte göra ett nytt val på, Const betyder att man låser
+	const jsGame = () => {
+		var usera = document.getElementById('answ').value;
+		
+		// if = om svaret är rätt/sant
+		if(usera == ans){
+			alert('GREAT Worked!')
+		}
+    
+		// Else = om svaret är fel/falskt 
+        else {
+		  alert("Correct Answer is " + ans + ". Try Again. ");
+		}
+
+	    // Startar om funktionen
+		n1 = Math.floor(Math.random()*20+1);
+		n2 = Math.floor(Math.random()*20+1);
+		document.getElementById('v1').value = n1;
+		document.getElementById('v2').value = n2; 
+
+		ans = n1 * n2;	
+		}
+</script>	
+</body>
+</html>
